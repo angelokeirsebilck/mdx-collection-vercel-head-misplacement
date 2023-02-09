@@ -5,12 +5,28 @@ pubDate: "Jul 02 2022"
 heroImage: "/placeholder-hero.jpg"
 ---
 
-import Card from "@components/Card.astro";
-import hi from "@assets/hi.png";
+import HomeBanner from "@components/blocks/home/HomeBanner.astro";
+import hi from "@assets/svg/hi.png";
 
-<Card title={"test"} body={"Blabla"} href={"https://www.google.be"}>
-  <div slot="bug">
-    This slot causes the bug!.{" "}
-    <img src={hi} width="83" height="81" class="" alt="Hi svg illustration" />
+<HomeBanner>
+  <h1
+    class="font-bebas text-5xl flex justify-center items-center flex-col text-center lg:text-7xl max-w-2xl mb-8"
+    slot="title"
+  >
+    <img
+      src={hi}
+      width="83"
+      height="81"
+      class="inline transformo -translate-y-1.5"
+      alt="Hi svg illustration"
+    />
+    <div class="">
+      Op zoek naar een <br /> website op{" "}
+      <span class="underline-svg-1">jouw maat?</span>
+    </div>
+  </h1>
+  <div class="text-2xl mb-10" slot="intro">
+    Met mijn persoonlijke aanpak en expertise komen we tot een resultaat die
+    perfect past bij jouw bedrijf.
   </div>
-</Card>
+</HomeBanner>

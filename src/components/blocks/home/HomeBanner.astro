@@ -1,0 +1,16 @@
+---
+import arrowPointer from "@assets/svg/arrow-1.svg";
+import lines from "@assets/svg/lines-homebanner.svg";
+import face from "@assets/svg/face.svg";
+import blob1 from "@assets/svg/blob-pink-1.svg";
+---
+
+<div class="relative overflow-hidden">
+  <div
+    class="container flex overflow-hidden flex-col items-center max-w-4xl justify-center text-center py-16 lg:pb-48"
+  >
+    <slot name="title" />
+
+    <slot name="intro" class="inline" />
+  </div>
+</div>
