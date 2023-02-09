@@ -7,4 +7,6 @@ heroImage: "/placeholder-hero.jpg"
 
 import Card from "@components/Card.astro";
 
-<Card title={"test"} body={"Blabla"} href={"https://www.google.be"} />
+<Card title={"test"} body={"Blabla"} href={"https://www.google.be"}>
+  <div slot="bug">This slot causes the bug!.</div>
+</Card>
