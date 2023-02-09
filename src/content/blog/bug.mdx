@@ -6,7 +6,11 @@ heroImage: "/placeholder-hero.jpg"
 ---
 
 import Card from "@components/Card.astro";
+import hi from "@assets/hi.png";
 
 <Card title={"test"} body={"Blabla"} href={"https://www.google.be"}>
-  <div slot="bug">This slot causes the bug!.</div>
+  <div slot="bug">
+    This slot causes the bug!.{" "}
+    <img src={hi} width="83" height="81" class="" alt="Hi svg illustration" />
+  </div>
 </Card>
