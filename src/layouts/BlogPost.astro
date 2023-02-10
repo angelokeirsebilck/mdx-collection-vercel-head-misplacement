@@ -48,14 +48,5 @@ export const prerender = true;
       </article>
     </main>
     <Footer />
-    <script>
-      import { useStaggerAnimationFromTo } from "@utils/useStaggerAnimationFromTo";
-      const staggetFromToParents = document.querySelectorAll(
-        ".js-staggerFromTo"
-      ) as NodeList;
-      staggetFromToParents.forEach((parent) => {
-        useStaggerAnimationFromTo(parent as HTMLElement);
-      });
-    </script>
   </body>
 </html>
