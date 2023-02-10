@@ -1,4 +1,5 @@
 ---
+import Link from "@components/ui/Link.astro";
 ---
 
 <div class="relative overflow-hidden">
@@ -8,5 +9,14 @@
     <slot name="title" />
 
     <slot name="intro" class="inline" />
+
+    <div class="relative flex">
+      <Link
+        link={{
+          uri: "/about",
+          label: "About",
+        }}
+      />
+    </div>
   </div>
 </div>
